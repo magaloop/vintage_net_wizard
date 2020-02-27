@@ -35,3 +35,7 @@ footer {
   margin-bottom: 220px;
   clear: both;
 }
+
+.col-data {
+  flex-grow: 2.5;
+}

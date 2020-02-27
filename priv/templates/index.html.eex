@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>VintageNet Wizard</title>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -59,10 +59,10 @@
 
        </div>
 
-       <a class="btn btn-primary" href="/networks">Add a New Network</a>
+       <a class="btn btn-primary m-1" href="/networks">Add a New Network</a>
        <%= if length(configs) > 0 do %>
-         <a class="btn btn-primary" href="/apply">Apply configuration</a>
-         <a class="btn btn-secondary" href="/complete" title="This will apply the configuration without any attempt to verify a successful network connection.">Complete Without Verification</a>
+         <a class="btn btn-primary m-1" href="/apply">Apply configuration</a>
+         <a class="btn btn-secondary m-1" href="/complete" title="This will apply the configuration without any attempt to verify a successful network connection.">Complete Without Verification</a>
        <% end %>
      </div>
 
@@ -70,8 +70,8 @@
        <div class="container">
          <%= for {info_name, info_data} <- device_info do %>
            <div class="row">
-             <strong class="col-sm-2"><%= info_name %></strong>
-             <span class="col"><%= info_data %></span>
+             <strong class="col"><%= info_name %></strong>
+             <span class="col col-data"><%= info_data %></span>
            </div>
          <% end %>
      </footer>

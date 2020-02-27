@@ -1,7 +1,7 @@
 <HTML>
   <HEAD>
     <TITLE>Captive Portal</TITLE>
-    <META http-equiv="refresh" content="0; url=<%= dns_name %>">
+    <META http-equiv="refresh" content="0; url=<%= dns_name %>" name="viewport" content="width=device-width, initial-scale=1">
   </HEAD>
   <BODY>
     <p>Redirecting to Network Setup...</p>
